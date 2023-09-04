@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digiScheme</title>  
+    <style>
+        *{
+            margin: 0;           
+        }
+        .container{
+            background-color: #C8B8DC;
+        }
+        .top{
+            height: 60px;          
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           align-items: center;
+        }
+        .nav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 52px;           
+        }
+        .serch{
+            height: 47px;
+            width: 600px;           
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+        input{
+            padding: 15px;
+            width: 537px;
+            border: 0px;
+            outline: 0px;
+            font-size: 15px;
+            background: transparent;
+        }
+        .te{
+            display: inline-block; 
+            flex-wrap: wrap;
+           margin: 5px;
+        }
+        .Ex{
+            flex-wrap: wrap;
+            padding: 5px;
+            width: 200px;
+           text-decoration: none;
+           color: black;
+            margin-right: 20px;
+            background-color:#A545F1;
+            font-size: 18px;
+            border-radius: 8px;            
+        }
+        .btnz{
+                 margin-right: 15px;
+                background-color:#A545F1 ;
+               border-radius: 3px;
+        }
+        .con{
+            height: 675px;           
+            overflow: hidden;
+            z-index: -10;
+        }
+        .main{
+            height: 320px;width: 800px;            
+           background-color: #7F5EA1;
+          margin-top: 200px;
+          margin-left: 110px;          
+          position: absolute;
+          overflow: hidden;
+          border-radius: 20px;
+          box-shadow: 10px 8px  #8888885e;
+        }
+        .para{
+            padding-top: 115px;
+            padding-left: 40px;
+            color: antiquewhite;
+            font-size: 33px;
+        }
+        .de{
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icon-search{
+            font-size: 26px;
+        }
+        .sc{
+            height: 310px;
+            display: flex;
+          justify-content:center;
+            align-items: center;
+        }
+        .vf
+        {
+            flex-wrap: wrap;
+            height: 60px;
+            width: 380px;
+            background-color: #A545F1;
+            padding: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;          
+        }       
+        .box1{
+            flex-wrap: wrap;
+            margin: 10px;
+            height: 200px;
+            width: 400px;
+           background-color: #d6c7e5;
+            border-radius: 10px;           
+              box-shadow: 5px 5px 2px rgb(98, 94, 94,0.8);
+              text-align: center;
+        }
+        .sd{
+            height: 216px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .dc{
+            height: 100px;
+            width: 459px;           
+        }
+        .itemg{
+            height: 700px;
+            width: 1200px;
+            margin:  auto; 
+            flex-wrap: wrap;          
+            display: grid;            
+            grid-template-columns:160px 160px 160px 160px ;           
+           column-gap: 170px;
+        }
+        .box2{
+             height: 200px;
+            width: 200px; 
+            background-color: rgb(27, 38, 38);
+            border-radius: 50%;
+            color: beige;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            text-shadow: 1.3px 1px    rgb(245, 238, 238,0.8);          
+        }
+        .about{
+            height: 500px;
+            flex-wrap: wrap;         
+        }
+        .para2{
+            margin-left: 120px;
+           position: relative;
+            height: 600px;
+            width: 750px;
+        }
+        .jk{
+            height: 600px;
+            background-color: aquamarine;
+        }
+        .foot{
+            flex-wrap: wrap;
+            height: 400px;
+            flex-wrap: wrap;
+            background-color: #A545F1;
+            display: grid;
+            grid-template-columns: 380px 380px  380px; 
+            column-gap: 100px;           
+        }
+        .box3{
+            flex-wrap: wrap;
+            margin: 20px;
+            height: 200px;
+            width: 400px;
+           background-color: #d6c7e5;
+            border-radius: 10px;           
+              box-shadow: 5px 5px 2px rgb(98, 94, 94,0.8);         
+        }
+        .vf:hover{
+            transform: scale(0.8);
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a19d8a25d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <a href="/"><i class='fas fa-link' style='font-size:24px'></i></a><h3 style="font-size: 20px;">Making India faster and secure</h3>
+        </div>
+        <nav class="nav">
+            <li class="te">
+                <img src="logo.png" alt="logo" style="padding-left: 20px;">
+            </li>
+            <li class="te">
+                <div class="serch">
+                    <input type="text" id="type" placeholder="Search for schemes,scholarships..">                   
+                    <a href="/"><i class="fa fa-search icon-search"></i></a>
+                </div>
+            </li>
+            <li class="te">
+      <div class="me">
+         <button  class="Ex"><a href="index3.html" style="text-decoration:none ;color: black;">Explore</a></button> 
+          <a href="index2.html" style="margin: 15px;"><i class="fa fa-user-o" style="font-size:24px"></i></a>
+      </div>
+            </li>
+        </nav>
+        <div class="con">        
+            <img src="illustration .png" alt="" style="float: right; margin-right: 150px;margin-left: -100px;position: relative;">
+            <div class="main">
+                <p class="para">Make your own decentralized finance and get quick payments with  <b style="color: blue;">digi<b style="color: black;">scheme</b></b></p>
+            </div>
+        </div>
+    </div>   
+    <div class="de">
+        <p style="font-size: 24px;">Get secured payment with </p>
+        <h3 style="font-size: 25px;">#SmartContracts</h3>      
+    </div>  
+    <div class="de"> 
+        <div class="vf">           
+            <button style="text-decoration: none; color: black;font-size: 28px;background-color:#A545F1 ;border: 0px;"><a href="index2.html" style="text-decoration: none;color: black;">Connect your wallet here <i class="fa-solid fa-arrow-right"></i></a></button>
+        </div>   
+    </div>
+     <div class="sc">
+        <div class="box1">
+            <h1 style="font-size: 65px;margin-top: 45px;text-shadow: 1px 2px rgb(155, 147, 147);">1954  </h1>
+            <p style="font-size: 23px;">Total Schemes</p>
+        </div>
+        <div class="box1">
+            <h1 style="font-size: 65px;margin-top: 45px; text-shadow: 1px 2px rgb(155, 147, 147);">456</h1>
+            <p style="font-size: 23px;">Central schemes</p>
+        </div>
+        <div class="box1">
+            <h1 style="font-size: 65px;margin-top: 45px; text-shadow: 1px 2px rgb(155, 147, 147);">1498</h1>
+            <p style="font-size: 23px;">State schemes</p>
+        </div>
+     </div>
+     <div class="sd">
+        <div class="dc">
+            <p style="font-size: 42px;">Select schemes according to your requirement</p>
+        </div>
+     </div>
+<div class="itemg">
+    <div class="box2">AGRICULTURE</div>
+    <div class="box2">EDUCATION</div>
+    <div class="box2">LAW</div>
+    <div class="box2">HEALTH</div>
+    <div class="box2">HOUSING</div> 
+    <div class="box2">TOURISM</div>
+    <div class="box2">FINANCE</div>
+    <div class="box2">PUBLIC WELFARE</div>
+    <div class="box2">SPORTS</div>
+    <div class="box2">BUSINESS</div>
+    <div class="box2">SCIENCE</div> 
+    <div class="box2">TRANSPORT</div> 
+</div>
+<div class="sd">
+    <div class="dc">
+        <a href="/"><i class="material-icons" style="font-size:36px">filter_3</i></a><p style="font-size: 42px;"> Easy steps to apply for the schemes</p>
+    </div>
+ </div>   
+ <div class="sc">
+    <div class="box3">
+       <img src="1st image,ng.png" alt="" style="float: left;">
+       <p style="margin-top: 70px; font-size: 20px;"><b>1.Connect</b> your crypto wallet by signing in</p>
+    </div>
+    <div class="box3">
+        <img src="2nd image.PNG" alt="" style="float: left;">
+        <p style="margin-top: 70px; font-size: 20px;"><b>2.Get details</b> of the scheme you are eligible from our database</p>
+    </div>
+    <div class="box3">
+        <img src="3rd image.PNG" alt="" style="float: left; font-size: 20px;">
+        <p style="margin-top: 60px; font-size: 20px;"><b>3.Apply</b> and get <b>faster</b> cryptocurrency transfer in your crypto wallet</p></p>
+    </div>
+ </div>
+   <div class="about">
+    <img src="ABOUT.png" alt="" style="float: right; margin-right: 150px;">   
+    <div class="para2">
+        <h1 style="padding: 15px;color: blue;">ABOUT</h1>
+        <p style="font-size: 23px; ">DigiScheme is a groundbreaking blockchain-based website that leverages the power of smart contracts to efficiently filter and disburse government schemes to those in need, revolutionizing the way social support is provided. Through seamless integration with the Ethereum blockchain, digiScheme ensures that assistance reaches eligible beneficiaries faster, securely, and with increased transparency.</p>
+        <p style="font-size: 23px;">DigiScheme is a groundbreaking blockchain-based website that leverages the power of smart contracts to efficiently filter and disburse government schemes to those in need, revolutionizing the way social support is provided. Through seamless integration with the Ethereum blockchain, digiScheme ensures that assistance reaches eligible beneficiaries faster, securely, and with increased transparency.</p>
+    </div>
+   </div>    
+  <footer class="foot">
+    <div class="bn" >
+        <a href="/" style="text-decoration: none;font-size: 20px;color: black; margin-top: 50px; margin-top: 100px;"><i style="font-size:24px" class="fa">&#xf1f9;</i>2023 <img src="logo.png" alt=""> 
+        </a>
+    </div>
+    <div class="bn">
+        <div style="padding: 10px;margin: 100px;">
+
+            <h2 style=" font-size: 24px;">
+                Quick links
+            </h2>
+            <ul>
+                <li class="re"  style="padding: 5px; font-size: 18px;">About</li>
+                <li class="re"  style="padding: 5px; font-size: 18px;">Contact Us</li>
+                <li class="re"  style="padding: 5px; font-size: 18px;">Disclaimer</li>
+                <li class="re"  style="padding: 5px; font-size: 18px;">Term and Condition</li>
+            </ul>
+        </div>
+    </div>
+    <div class="bn">
+        <div style="padding: 4px;margin-top: 100px;margin-left: 50px;">
+            <h2 style="margin-left: 28px;">Support</h2>
+            <h3 style="padding: 5px;">Email:digischeme@gmail.com</h3>
+            <h3 style="padding: 5px;">Phone:9009190091</h3>
+        </div>
+    </div>
+  </footer> 
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+</body>
+</html>
